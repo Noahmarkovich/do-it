@@ -53,7 +53,7 @@ A modern task management application built with a monorepo structure, featuring 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/do-it.git
+git clone https://github.com/Noahmarkovich/do-it.git
 cd do-it
 ```
 
