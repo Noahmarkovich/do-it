@@ -1,6 +1,6 @@
 # Do It - Task Management Application
 
-A modern task management application built with React, featuring secure cookie-based authentication and an intuitive user interface.
+A modern task management application built with a monorepo structure, featuring a React frontend and Nest.js backend.
 
 ## 🚀 Features
 
@@ -31,19 +31,23 @@ A modern task management application built with React, featuring secure cookie-b
 
 ## 🛠️ Technologies Used
 
-- **Frontend**
-  - React 18
+- **Frontend (apps/web)**
+  - React
   - TypeScript
   - Vite
   - Tailwind CSS
   - React Router
   - React Icons
 
-- **Backend**
-  - Node.js
-  - Express
+- **Backend (apps/api)**
+  - Nest.js
   - PostgreSQL
   - JWT Authentication
+
+- **Development Tools**
+  - PNPM (Package Manager)
+  - Monorepo Structure
+  - TypeScript
 
 ## 📦 Installation
 
@@ -53,42 +57,52 @@ git clone https://github.com/yourusername/do-it.git
 cd do-it
 ```
 
-2. Install dependencies:
+2. Install dependencies using PNPM:
 ```bash
-npm install
+pnpm install
 ```
 
-3. Create a `.env` file in the root directory and add your environment variables:
-```env
-VITE_API_URL=your_api_url
-```
+3. Create environment files:
+   - Create `.env` in `apps/web` for frontend variables
+   - Create `.env` in `apps/api` for backend variables
 
-4. Start the development server:
+4. Start the development servers:
 ```bash
-npm run dev
+# Start both frontend and backend
+ pnpm -r dev
+
+# Or start them separately
+cd apps/web && pnpm dev
+cd apps/api && pnpm dev
+
 ```
-
-## 🔧 Configuration
-
-The application requires the following environment variables:
-
-- `VITE_API_URL`: The URL of your backend API
 
 ## 🏗️ Project Structure
 
 ```
-src/
-├── components/     # Reusable UI components
-├── pages/         # Page components
-├── services/      # API services
-├── types/         # TypeScript type definitions
-├── utils/         # Utility functions
-└── App.tsx        # Main application component
+do-it/
+├── apps/
+│   ├── web/           # Frontend React application
+│   │   ├── src/
+│   │   │   ├── components/  # Reusable UI components
+│   │   │   ├── pages/      # Page components
+│   │   │   ├── services/   # API services
+│   │   │   ├── types/      # TypeScript type definitions
+│   │   │   └── utils/      # Utility functions
+│   │   └── ...
+│   │
+│   └── api/           # Backend Node.js application
+│       ├── src/
+│       │   ├── controllers/ # Route controllers
+│       │   ├── models/      # Database models
+│       │   ├── routes/      # API routes
+│       │   ├── services/    # Business logic
+│       │   └── utils/       # Utility functions
+│       └── ...
+│
+├── package.json       # Root package.json
+└── pnpm-workspace.yaml # PNPM workspace configuration
 ```
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
 

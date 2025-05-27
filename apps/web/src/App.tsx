@@ -15,9 +15,11 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <UserContext.Provider value={{ user, setUser }}>
-        <AppHeader />
-        <Outlet />
-        <AppFooter />
+        <div className="h-screen flex flex-col">
+          <AppHeader />
+          <Outlet />
+          <AppFooter />
+        </div>
       </UserContext.Provider>
     </QueryClientProvider>
   );

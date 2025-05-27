@@ -16,7 +16,7 @@ export default function HomePage() {
   console.log("check");
 
   return (
-    <div className="flex flex-col items-center justify-center h-[82vh] ">
+    <div className="flex flex-col items-center justify-center h-full">
       <div className="flex flex-col items-center justify-center border border-gray-200 rounded-xl p-6 w-[350px] gap-4">
         <h1 className="text-4xl font-bold">👩‍💻</h1>
         <h2 className="text-xl font-bold">Welcome to DoIt</h2>

@@ -17,9 +17,9 @@ export default function AppHeader() {
   }
 
   return (
-    <header className="border-b border-gray-200 h-[8vh]">
+    <header className="border-b border-gray-200 pb-3">
       <div className="h-2 bg-linear-to-r from-violet-800 to-fuchsia-400"></div>
-      <div className="m-auto px-5 md:px-[10%] lg:px-[20%] flex items-center justify-between h-full">
+      <div className="m-auto px-5 md:px-[10%] lg:px-[20%] flex items-center justify-between h-full pt-2">
         <a href="/">
           <img src={logo} alt="logo" />
         </a>

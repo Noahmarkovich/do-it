@@ -104,7 +104,7 @@ export default function TaskPage() {
   }
 
   return (
-    <div className="m-auto px-5 md:px-[10%] lg:px-[20%] xl:px-[30%] py-2 flex flex-col gap-5 h-[82vh] pt-10 overflow-y-auto">
+    <div className="px-5 md:px-[10%] lg:px-[20%] xl:px-[30%] flex flex-col gap-5 py-10">
       <ExtraActions
         completedTasks={completedTasks}
         totalTasks={totalTasks}
