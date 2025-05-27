@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterTight";
+  src: url("./assets/fonts/InterTight-Regular.ttf") format("truetype");
+}
+
+
+ :root {
+  font-family: "Inter";
+  --inter: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --inter-tight: "InterTight", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --header-gradient: 
+  
+}
+
+.inter-tight {
+  font-family: var(--inter-tight);
+}
+
+.inter {
+  font-family: var(--inter);
+}
+
+button{
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--inter-tight);
+}
+/*
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
